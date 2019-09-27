@@ -3,11 +3,20 @@ entries:
   cp-helm-charts:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-09-27T16:23:16.211947-04:00
+    created: "2019-09-27T16:44:34.621246-04:00"
     description: A Helm chart for Confluent Open Source
-    digest: de1696d67b7388b958f1cd901e0bdc5d52c193e568e55e1ce4572dcfcbc4ef55
+    digest: e30f56566bb97475971093fb62670d9d233efd8ed99ae887a7bfbddcb612e8cb
     name: cp-helm-charts
     urls:
-    - docs/cp-helm-charts-0.1.0.tgz
-    version: 0.1.0
-generated: 2019-09-27T16:23:16.205414-04:00
+    - https://github.com/viperKiran/cp-helm-charts/cp-helm-charts-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2019-09-27T16:44:34.624302-04:00"
+    description: A Helm chart for Confluent Open Source
+    digest: ec2c3264ac0efe8c3bc0552e0ed199439d88854b4ae711b10b85c32c17902f76
+    name: cp-helm-charts
+    urls:
+    - https://github.com/viperKiran/cp-helm-charts/docs/cp-helm-charts-0.3.0.tgz
+    version: 0.3.0
+generated: "2019-09-27T16:44:34.618814-04:00"
