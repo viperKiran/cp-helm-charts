@@ -2,7 +2,7 @@
 ## Zookeeper
 ## ------------------------------------------------------
 cp-zookeeper:
-  enabled: true
+  enabled: false
   servers: 3
   image: confluentinc/cp-zookeeper
   imageTag: 5.3.1
@@ -24,20 +24,20 @@ cp-zookeeper:
     dataLogDirSize: 10Gi
     # dataLogDirStorageClass: ""
   resources: {}
-  ## If you do want to specify resources, uncomment the following lines, adjust them as necessary,
-  ## and remove the curly braces after 'resources:'
-  #  limits:
-  #   cpu: 100m
-  #   memory: 128Mi
-  #  requests:
-  #   cpu: 100m
-  #   memory: 128Mi
+  # If you do want to specify resources, uncomment the following lines, adjust them as necessary,
+  # and remove the curly braces after 'resources:'
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
 
 ## ------------------------------------------------------
 ## Kafka
 ## ------------------------------------------------------
 cp-kafka:
-  enabled: true
+  enabled: false
   brokers: 3
   image: confluentinc/cp-enterprise-kafka
   imageTag: 5.3.1
@@ -52,20 +52,20 @@ cp-kafka:
     size: 5Gi
     disksPerBroker: 1
   resources: {}
-  ## If you do want to specify resources, uncomment the following lines, adjust them as necessary,
-  ## and remove the curly braces after 'resources:'
-  #  limits:
-  #   cpu: 100m
-  #   memory: 128Mi
-  #  requests:
-  #   cpu: 100m
-  #   memory: 128Mi
+  # If you do want to specify resources, uncomment the following lines, adjust them as necessary,
+  # and remove the curly braces after 'resources:'
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
 
 ## ------------------------------------------------------
 ## Schema Registry
 ## ------------------------------------------------------
 cp-schema-registry:
-  enabled: true
+  enabled: false
   image: confluentinc/cp-schema-registry
   imageTag: 5.3.1
   ## Optionally specify an array of imagePullSecrets. Secrets must be manually created in the namespace.
@@ -74,20 +74,20 @@ cp-schema-registry:
   #  - name: "regcred"
   heapOptions: "-Xms512M -Xmx512M"
   resources: {}
-  ## If you do want to specify resources, uncomment the following lines, adjust them as necessary,
-  ## and remove the curly braces after 'resources:'
-  #  limits:
-  #   cpu: 100m
-  #   memory: 128Mi
-  #  requests:
-  #   cpu: 100m
-  #   memory: 128Mi
+  # If you do want to specify resources, uncomment the following lines, adjust them as necessary,
+  # and remove the curly braces after 'resources:'
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
 
 ## ------------------------------------------------------
 ## REST Proxy
 ## ------------------------------------------------------
 cp-kafka-rest:
-  enabled: true
+  enabled: false
   image: confluentinc/cp-kafka-rest
   imageTag: 5.3.1
   ## Optionally specify an array of imagePullSecrets. Secrets must be manually created in the namespace.
@@ -96,20 +96,20 @@ cp-kafka-rest:
   #  - name: "regcred"
   heapOptions: "-Xms512M -Xmx512M"
   resources: {}
-  ## If you do want to specify resources, uncomment the following lines, adjust them as necessary,
-  ## and remove the curly braces after 'resources:'
-  #  limits:
-  #   cpu: 100m
-  #   memory: 128Mi
-  #  requests:
-  #   cpu: 100m
-  #   memory: 128Mi
+  # If you do want to specify resources, uncomment the following lines, adjust them as necessary,
+  # and remove the curly braces after 'resources:'
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
 
 ## ------------------------------------------------------
 ## Kafka Connect
 ## ------------------------------------------------------
 cp-kafka-connect:
-  enabled: true
+  enabled: false
   image: confluentinc/cp-kafka-connect
   imageTag: 5.3.1
   ## Optionally specify an array of imagePullSecrets. Secrets must be manually created in the namespace.
@@ -118,20 +118,20 @@ cp-kafka-connect:
   #  - name: "regcred"
   heapOptions: "-Xms512M -Xmx512M"
   resources: {}
-  ## If you do want to specify resources, uncomment the following lines, adjust them as necessary,
-  ## and remove the curly braces after 'resources:'
-  #  limits:
-  #   cpu: 100m
-  #   memory: 128Mi
-  #  requests:
-  #   cpu: 100m
-  #   memory: 128Mi
+  # If you do want to specify resources, uncomment the following lines, adjust them as necessary,
+  # and remove the curly braces after 'resources:'
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
 
 ## ------------------------------------------------------
 ## KSQL Server
 ## ------------------------------------------------------
 cp-ksql-server:
-  enabled: true
+  enabled: false
   image: confluentinc/cp-ksql-server
   imageTag: 5.3.1
   ## Optionally specify an array of imagePullSecrets. Secrets must be manually created in the namespace.
@@ -146,7 +146,7 @@ cp-ksql-server:
 ## Control Center
 ## ------------------------------------------------------
 cp-control-center:
-  enabled: true
+  enabled: false
   image: confluentinc/cp-enterprise-control-center
   imageTag: 5.2.0
   ## Optionally specify an array of imagePullSecrets. Secrets must be manually created in the namespace.
@@ -155,11 +155,11 @@ cp-control-center:
   #  - name: "regcred"
   heapOptions: "-Xms512M -Xmx512M"
   resources: {}
-  ## If you do want to specify resources, uncomment the following lines, adjust them as necessary,
-  ## and remove the curly braces after 'resources:'
-  #  limits:
-  #   cpu: 100m
-  #   memory: 128Mi
-  #  requests:
-  #   cpu: 100m
-  #   memory: 128Mi
+  # If you do want to specify resources, uncomment the following lines, adjust them as necessary,
+  # and remove the curly braces after 'resources:'
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
