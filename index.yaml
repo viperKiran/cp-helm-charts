@@ -8,7 +8,7 @@ entries:
     digest: e30f56566bb97475971093fb62670d9d233efd8ed99ae887a7bfbddcb612e8cb
     name: cp-helm-charts
     urls:
-    - https://github.com/viperKiran/cp-helm-charts/cp-helm-charts-0.3.0.tgz
+    - https://github.com/viperKiran/cp-helm-charts/blob/master/cp-helm-charts-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v1
     appVersion: "1.0"
@@ -17,6 +17,6 @@ entries:
     digest: ec2c3264ac0efe8c3bc0552e0ed199439d88854b4ae711b10b85c32c17902f76
     name: cp-helm-charts
     urls:
-    - https://github.com/viperKiran/cp-helm-charts/docs/cp-helm-charts-0.3.0.tgz
+    - https://github.com/viperKiran/cp-helm-charts/blob/master/docs/cp-helm-charts-0.3.0.tgz
     version: 0.3.0
 generated: "2019-09-27T16:44:34.618814-04:00"
